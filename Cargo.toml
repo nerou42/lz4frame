@@ -1,0 +1,14 @@
+[package]
+name = "lz4frame"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ext-php-rs = "0.15.1"
+lz4_flex = "0.11.5"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+strip = "debuginfo"
